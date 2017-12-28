@@ -1,0 +1,58 @@
+#headSection {
+            /* making full viewport div */
+            height: 100vh;
+            width: 100vw;
+            /* responsive background imnage */
+            background-image: url('../img/bgpic.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 100% left;
+
+        }
+
+        #welcome {
+            position: relative;
+            padding-top: 10%;
+            padding-left: 40%;
+            color: yellow;
+            text-shadow: 3px 5px #000;
+            font-family: monospace, sans-serif;
+        }
+
+        .shadow {
+            text-shadow: 1px 1px #000;
+            color: burlywood;
+        }
+
+        .hw80 {
+            height: 80%;
+            width: 80%;
+        }
+
+        .h100w80 {
+            height: 100%;
+            width: 80%;
+        }
+        .fa-check {
+            color: green;
+        }
+        .fa-crosshairs {
+            color: red;
+        }
+        #footer {
+            background-color: #333333;
+            color: aliceblue;
+            padding-bottom: 100px;
+        }
+        .social {
+            font-size: 200%;
+        }
+        .captionText {
+            text-shadow: 1px 1px #000;
+            font-weight: bold;
+            font-family: monospace, sans-serif;
+            color: #cc0066;
+        }
+        .controlsarrow {
+            color: yellow;
+        }

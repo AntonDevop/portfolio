@@ -14,62 +14,71 @@
     
     <link rel="stylesheet" type="text/css" href="css/main.css">
     
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">    
+    
 </head>
 
-<body>
+<body>    
     <div id="headSection">
-        <h1 id="welcome">Welcome to my page!</h1>
+       <div class="welcome">
+        <h1>Welcome!<br> 
+        I am an aspiring <br> 
+        Web Developer</h1>
+        </div>
+        <a href="#experience" id="scrollDown" class="mx-auto"><i class="fa fa-chevron-down"></i> Click here to scroll down <i class="fa fa-chevron-down"></i></a>
     </div>
 
-    <div class="container">
-        <h1 class="text-center pt-3 shadow">My experience</h1>
-        <h5 class="text-center pt-3 pb-5"> Here is what I have already faced with during my study. So far ...</h5>
+    <div class="container" id="experience">
+        <h1 class="text-center py-3 hFonts">My experience</h1>
+        <h5 class="text-center"> Here is what I have already faced with during my study. So far ...</h5>
 
         <div class="row">
             <!-- 3 cards with html, css and js -->
+			
+			<div class="card-deck mx-auto my-3">			
+				<div class="col-md-4">
+					<div class="card text-center cardsize">
+						<img class="card-img-top" src="img/html5.png" alt="HTML logo">
+						<div class="card-body">
+							<h4 class="card-title">HTML</h4>
+							<p class="card-text">Fundamental knowledge about HTML</p>
+							<p class="card-text"><small class="text-muted">Gained from various courses</small></p>
+						</div>
+					</div>
+				</div>
 
-            <div class="col-md-4">
-                <div class="card text-center hw80">
-                    <img class="card-img-top" src="img/html5.png" alt="HTML logo">
-                    <div class="card-body">
-                        <h4 class="card-title">HTML</h4>
-                        <p class="card-text">Fundamental knowledge about HTML</p>
-                        <p class="card-text"><small class="text-muted">Gained from various courses</small></p>
-                    </div>
-                </div>
-            </div>
 
+				<div class="col-md-4">
+					<div class="card text-center cardsize">
+						<img class="card-img-top" src="img/css3.png" alt="CSS logo">
+						<div class="card-body">
+							<h4 class="card-title">CSS</h4>
+							<p class="card-text">Some knowledge in CSS which helps a lot</p>
+							<p class="card-text"><small class="text-muted">Experienced in Bootstrap 3 &amp; 4</small></p>
+						</div>
+					</div>
+				</div>
 
-            <div class="col-md-4">
-                <div class="card text-center hw80">
-                    <img class="card-img-top" src="img/css3.png" alt="CSS logo">
-                    <div class="card-body">
-                        <h4 class="card-title">CSS</h4>
-                        <p class="card-text">Some knowledge in CSS which helps a lot</p>
-                        <p class="card-text"><small class="text-muted">Experienced in Bootstrap 3 &amp; 4</small></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card text-center hw80">
-                    <img class="card-img-top" src="img/JS.png" alt="JavaScript logo">
-                    <div class="card-body">
-                        <h4 class="card-title">JavaScript</h4>
-                        <p class="card-text">Knowledge of JS to make pages dynamic</p>
-                        <p class="card-text"><small class="text-muted">Tried jQuery + jQUeryUI</small></p>
-                    </div>
-                </div>
-            </div>
-
+				<div class="col-md-4">
+					<div class="card text-center cardsize">
+						<img class="card-img-top" src="img/JS.png" alt="JavaScript logo">
+						<div class="card-body">
+							<h4 class="card-title">JavaScript</h4>
+							<p class="card-text">Knowledge of JS to make pages dynamic</p>
+							<p class="card-text"><small class="text-muted">Tried jQuery + jQUeryUI</small></p>
+						</div>
+					</div>
+				</div>
+			</div>	
         </div>
 
         <div class="row">
             <!-- 3 more cards with php, MySQL and APIs -->
 
-            <div class="card-deck">
+            <div class="card-deck mx-auto my-3">
                 <div class="col-md-4">
-                    <div class="card text-center h100w80">
+                    <div class="card text-center cardsize">
                         <img class="card-img-top mt-5" src="img/php.jpg" alt="PHP logo">
                         <div class="card-body">
                             <h4 class="card-title">PHP</h4>
@@ -81,7 +90,7 @@
 
 
                 <div class="col-md-4">
-                    <div class="card text-center h100w80">
+                    <div class="card text-center cardsize">
                         <img class="card-img-top" src="img/mysql.jpg" alt="MySQL logo">
                         <div class="card-body">
                             <h4 class="card-title">MySQL</h4>
@@ -92,7 +101,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card text-center h100w80">
+                    <div class="card text-center cardsize">
                         <img class="card-img-top" src="img/api.jpg" alt="API logo">
                         <div class="card-body">
                             <h4 class="card-title">API</h4>
@@ -109,90 +118,91 @@
 
     <!-- My courses -->
 
-    <div class="container mt-5">
-        <h1 class="text-center">Courses which I took or taking right now</h1>
+    <div class="container-fluid py-5" id="coursesSection">
+        <h1 class="text-center hFonts">Courses which I took or taking right now</h1>
 
-        <div id="accordion" role="tablist">
-<!-- First course -->
-            <div class="card">
-                <div class="card-header" role="tab" id="headingOne">
-                    <h5 class="mb-0">
-                        <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Complete Web Developer Course 2.0</a>
-                    </h5>
-                </div>
+            <div id="accordion" role="tablist" class="mx-auto">
+    <!-- First course -->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Complete Web Developer Course 2.0 </a><span class="badge badge-warning">Ongoing</span>
+                        </h5>
+                    </div>
 
-                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-body">
-                        The course from <i>Rob Percival</i> at <a href="https://www.udemy.com/the-complete-web-developer-course-2/" target="_blank">Udemy</a>. Probalby the most easy-going course with interesting and useful explanations and high-end real life challanges. The course is steel in progress and soon will be finished by me. Here is up-to-date progress report by sections of the course:
-                        <div class="row">
+                    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            The course from <i>Rob Percival</i> at <a href="https://www.udemy.com/the-complete-web-developer-course-2/" target="_blank">Udemy</a>. Probalby the most easy-going course with interesting and useful explanations and high-end real life challanges. The course is steel in progress and soon will be finished by me. Here is up-to-date progress report by sections of the course:
+                            <div class="row mx-auto">
 
-                            <div class="col-sm">
-                                <ol class="ml-5">
-                                    <strike>
-                                        <li>Getting Started <i class="fas fa-check"></i></li> 
-                                        <li>HTML 5 <i class="fas fa-check"></i></li>
-                                        <li>CSS 3 <i class="fas fa-check"></i></li>
-                                        <li>Javascript <i class="fas fa-check"></i></li>
-                                        <li>jQuery <i class="fas fa-check"></i></li>
-                                        <li>Bootstrap 4 <i class="fas fa-check"></i></li>
-                                        <li>Wordpress <i class="fas fa-check"></i></li>
-                                   </strike>
-                                </ol>
-                            </div>
+                                <div class="col-sm">
+                                    <ol>
+                                        <strike>
+                                            <li>Getting Started <i class="fas fa-check green"></i></li> 
+                                            <li>HTML 5 <i class="fas fa-check green"></i></li>
+                                            <li>CSS 3 <i class="fas fa-check green"></i></li>
+                                            <li>Javascript <i class="fas fa-check green"></i></li>
+                                            <li>jQuery <i class="fas fa-check green"></i></li>
+                                            <li>Bootstrap 4 <i class="fas fa-check green"></i></li>
+                                            <li>Wordpress <i class="fas fa-check green"></i></li>
+                                       </strike>
+                                    </ol>
+                                </div>
 
-                            <div class="col-sm">
-                                <ol class="mr-5" start="8">
-                                    <strike>
-                                        <li>PHP <i class="fas fa-check"></i></li>
-                                        <li>MySQL <i class="fas fa-check"></i></li>
-                                   </strike>
-                                    <li>APIs <i class="fas fa-crosshairs"></i></li>
-                                    <li>Mobile Apps <i class="fas fa-crosshairs"></i></li>
-                                    <li>HTML 5 & CSS 3 Special Features <i class="fas fa-crosshairs"></i></li>
-                                    <li>Python <i class="fas fa-crosshairs"></i></li>
-                                    <li>Bonus Section: Twitter Clone Using MVC <i class="fas fa-crosshairs"></i></li>
-                                </ol>
+                                <div class="col-sm">
+                                    <ol start="8">
+                                        <strike>
+                                            <li>PHP <i class="fas fa-check green"></i></li>
+                                            <li>MySQL <i class="fas fa-check green"></i></li>
+                                       </strike>
+                                        <li>APIs <i class="fas fa-crosshairs red"></i></li>
+                                        <li>Mobile Apps <i class="fas fa-crosshairs red"></i></li>
+                                        <li>HTML 5 & CSS 3 Special Features <i class="fas fa-crosshairs red"></i></li>
+                                        <li>Python <i class="fas fa-crosshairs red"></i></li>
+                                        <li>Bonus Section: Twitter Clone Using MVC <i class="fas fa-crosshairs red"></i></li>
+                                    </ol>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-<!--Second course -->           
-            <div class="card">
-                <div class="card-header" role="tab" id="headingTwo">
-                    <h5 class="mb-0">
-                        <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">FreeCodeCamp</a>
-                    </h5>
-                </div>
-                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-                    <div class="card-body">
-                        Learnt about <a href="https://www.freecodecamp.org" target="_blank">this</a> project accidently and decided to give it a chance. So my streak there has started since December 19, 2017 and as of today no any skipped day. Though the way of teaching in FreeCodeCamp is not much to my taste but the Community is the real power of this project especially educational videos at Youtube. 
+    <!--Second course -->           
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingTwo">
+                        <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">FreeCodeCamp </a><span class="badge badge-warning">Ongoing</span>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            Learnt about <a href="https://www.freecodecamp.org" target="_blank">this</a> project accidently and decided to give it a chance. So my streak there has started since December 19, 2017 and as of today no any skipped day. Though the way of teaching in FreeCodeCamp is not much to my taste but the Community is the real power of this project especially educational videos at Youtube. 
+                        </div>
                     </div>
                 </div>
-            </div>
-<!-- Third course -->
-            <div class="card">
-                <div class="card-header" role="tab" id="headingThree">
-                    <h5 class="mb-0">
-                        <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">The Python Mega Course: Build 10 Real World Applications</a>
-                    </h5>
-                </div>
-                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body">
-                        It was a New Year's gift for my inner "babby-coder".
-                         <blockquote class="blockquote text-center">
-                          <p class="mb-0">The only Python course covering web, databases, web scraping, data science, web visualizations, image processing &amp; more!</p>
-                             <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Ardit Sulce <p class="small">Python and GIS Expert, Founder of PythonHow.com</p></cite></footer>
-                        </blockquote>
-                        This sounded tempting for me I decided to check out demo videos and in a few minutes decision to take <a href="https://www.udemy.com/the-python-mega-course/" target="_blank">this course</a> was done without any qualms.                        
+    <!-- Third course -->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingThree">
+                        <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">The Python Mega Course: Build 10 Real World Applications</a> <span class="badge badge-info">To Be Done</span>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            It was a New Year's gift for my inner "babby-coder".
+                             <blockquote class="blockquote text-center">
+                              <p class="mb-0">The only Python course covering web, databases, web scraping, data science, web visualizations, image processing &amp; more!</p>
+                                 <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Ardit Sulce <p class="small">Python and GIS Expert, Founder of PythonHow.com</p></cite></footer>
+                            </blockquote>
+                            This sounded tempting for me I decided to check out demo videos and in a few minutes decision to take <a href="https://www.udemy.com/the-python-mega-course/" target="_blank">this course</a> was done without any qualms.                        
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        </div>
+            </div>
+    </div>
         
-        
-        <h1 class="text-center mt-5">Projects done by me during my learning process</h1>
+    <div class="container">
+        <h1 class="text-center hFonts mt-5">Projects done by me during my learning process</h1>
         <div class="row mt-5 mb-5">
             <div class="col-md-8 offset-md-2">
 <!-- Carousel for projects from courses -->
@@ -251,10 +261,39 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
+    <script>       
+        
+    $(document).ready(function(){
+        // Add smooth scrolling to the scroll down link
+        $("#scrollDown").on("click", function(){
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+            // Store hash
+            var hash = this.hash;
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+                }, 1500, function(){
+   
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+      });
+    }
+  });
+});
+            
+            
+    </script>
+    
 
 
 </body>

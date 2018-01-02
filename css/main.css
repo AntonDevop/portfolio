@@ -3,56 +3,105 @@
             height: 100vh;
             width: 100vw;
             /* responsive background imnage */
-            background-image: url('../img/bgpic.jpg');
+            background-image: url('../img/bgimg.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 100% left;
-
+            
+            animation-name: fadeIn;
+            animation-duration: 4s;
         }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
-        #welcome {
-            position: relative;
-            padding-top: 10%;
-            padding-left: 40%;
+.welcome {
+            /* centering text */
+            position: absolute;            
+            top: 100%;
+            width: 50%;
+            right: 25%;            
+            text-align: center;
+            /* font settings */
             color: yellow;
             text-shadow: 3px 5px #000;
-            font-family: monospace, sans-serif;
+            font-family: 'Lobster', cursive, sans-serif;
+            letter-spacing: 4px;
+            word-spacing: 7px;
+            font-size: 3em;
+            /* text outline */
+            -webkit-text-stroke: 0.5px #0033cc;     
+            
+            animation-name: goUp;
+            animation-duration: 2s;
+            animation-delay: 1s;                      
+            animation-fill-mode: forwards;
         }
-
-        .shadow {
-            text-shadow: 1px 1px #000;
-            color: burlywood;
+@keyframes goUp {
+    from {
+        top: 120%;
+    }
+    to {        
+        top: 35%;
+        
+    }
+}
+.cardsize {
+    width: 300px;
+    height: 500px;
+}
+.hFonts {
+            color: sandybrown;
+            text-shadow: 2px 3px #000;
+            font-family: 'Lobster', cursive, sans-serif;
+            letter-spacing: 4px;
+            word-spacing: 7px;
+            font-size: 3em;
+            /* text outline */
+            -webkit-text-stroke: 0.5px #0033cc;   
+        }        
+.green {
+            color: green;    
         }
-
-        .hw80 {
-            height: 80%;
-            width: 80%;
-        }
-
-        .h100w80 {
-            height: 100%;
-            width: 80%;
-        }
-        .fa-check {
-            color: green;
-        }
-        .fa-crosshairs {
+.red {
             color: red;
         }
-        #footer {
+#footer {
             background-color: #333333;
             color: aliceblue;
             padding-bottom: 100px;
         }
-        .social {
-            font-size: 200%;
+/* .social {
+            font-size: 200%;            
+            -webkit-transition: fontsize 3s, color 3s, transform 3s; /* For Safari 3.1 to 6.0 */ /*
+            transition: fontsize 3s, color 3s, transform 3s;           
+        } 
+*/
+.social {
+            font-size: 200%;            
+            -webkit-transition: all 3s, transform 1.5s; /* For Safari 3.1 to 6.0 */
+            transition: all 3s, transform 1.5s;
         }
-        .captionText {
-            text-shadow: 1px 1px #000;
-            font-weight: bold;
-            font-family: monospace, sans-serif;
-            color: #cc0066;
+.social:hover {
+            font-size: 300%;
+            color: greenyellow;
+            -webkit-transform: rotate(360deg); /* Safari */
+            transform: rotate(360deg);
         }
-        .controlsarrow {
-            color: yellow;
-        }
+#accordion {
+    width: 75%;
+}
+#coursesSection {
+    background-color: #d5cebe;
+}
+#scrollDown {
+    position: absolute;
+    width: 100vw;
+    bottom:  3%;
+    text-align: center;    
+}
